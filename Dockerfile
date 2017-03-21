@@ -3,6 +3,7 @@ MAINTAINER ninthwalker
 
 ENV UPDATED_ON 21MAR2017
 VOLUME /app
+WORKDIR /app
 
 #copy app
 COPY root/ /
