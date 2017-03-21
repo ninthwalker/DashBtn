@@ -9,7 +9,7 @@ WORKDIR /app
 COPY root/ /
 
 # Install permanent packages
-RUN apk add --no-cache python && \
+RUN apk add --no-cache python
 
 # Start dashbtn app
 CMD ["python", "dashbtn.py"]
