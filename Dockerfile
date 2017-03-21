@@ -8,7 +8,7 @@ WORKDIR /app
 #copy app
 COPY root/ /
 
-# Install permanent packages
+# Install permanent packages.
 RUN apk add --no-cache python
 
 # Start dashbtn app
