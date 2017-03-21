@@ -12,6 +12,7 @@ RUN apk add --no-cache python && \
 
 # Install temporary build dependencies
 apk add --no-cache --virtual build-dependencies \
+shadow \
 curl \
 tar \
 && curl -L -s https://github.com/just-containers/s6-overlay/releases/download/v1.19.1.1/s6-overlay-amd64.tar.gz \
