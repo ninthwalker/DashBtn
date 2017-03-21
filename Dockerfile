@@ -2,8 +2,8 @@ FROM alpine:3.5
 MAINTAINER ninthwalker
 
 ENV UPDATED_ON 21MAR2017
-VOLUME /app
-WORKDIR /app
+VOLUME /config
+WORKDIR /config
 
 #copy app
 COPY root/ /
@@ -12,4 +12,4 @@ COPY root/ /
 RUN apk add --no-cache python
 
 # Start dashbtn app
-CMD ["python", "dashbtn.py"]
+CMD ["cp", "/app", "/config", "&&", "./dashbtn.py"]
