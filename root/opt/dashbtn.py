@@ -9,7 +9,7 @@ import logging
 import binascii
 import subprocess
 
-logging.basicConfig(filename='/var/log/dashbtn.log',
+logging.basicConfig(filename='/config/dashbtn.log',
                     level=logging.INFO,
                     format='%(asctime)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S -- ')
 
