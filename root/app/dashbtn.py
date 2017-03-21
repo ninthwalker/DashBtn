@@ -18,9 +18,9 @@ if len(sys.argv) > 1:
     if sys.argv[1] == "discover": discover_mode=True
 
 rawSocket = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.htons(0x0003))
-buttons={"a002dc61b924_192.168.1.1":["Bdrm Light - Goldfish",0,["/config/goldfish.sh"]],
-         "74c2469ad556_192.168.1.1":["TV - Tide",0,["/config/tide.sh"]],
-         "f0272d22edd0_192.168.1.1":["Mickey Mouse - Glad",0,["/config/glad.sh"]]}
+buttons={"a002dc61b924_192.168.1.1":["Bdrm Light - Goldfish",0,["/app/goldfish.sh"]],
+         "74c2469ad556_192.168.1.1":["TV - Tide",0,["/app/tide.sh"]],
+         "f0272d22edd0_192.168.1.1":["Mickey Mouse - Glad",0,["/app/glad.sh"]]}
 
 logging.info(' ### DashBtn Service Started ### ')
 while True:
