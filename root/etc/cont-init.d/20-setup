@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv sh
+
+#creates config file
+if [ -f /config/dashbtn.py ]; then
+  echo "Config files detected. Using existing config"
+  echo    # move to a new line
+else
+# begin initial setup
+ cp -Rp /opt/* /config/
+ echo "Setup complete! Please read directions for settings."
+fi
