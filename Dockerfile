@@ -8,12 +8,11 @@ VOLUME /config
 COPY root/ /
 
 # Install permanent packages
-RUN apk add --no-cache python && \
+RUN apk add --no-cache python curl && \
 
 # Install temporary build dependencies
 apk add --no-cache --virtual build-dependencies \
 shadow \
-curl \
 py-pip \
 tar \
 && curl -L -s https://github.com/just-containers/s6-overlay/releases/download/v1.19.1.1/s6-overlay-amd64.tar.gz \
