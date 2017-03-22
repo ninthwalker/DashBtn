@@ -3,6 +3,7 @@
 #creates config file
 if [ -f /config/dashbtn.py ]; then
   echo "Config files detected. Using existing config"
+  chmod -R +x /config
   echo    # move to a new line
 else
 # begin initial setup
