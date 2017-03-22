@@ -6,6 +6,7 @@ PGID=${PGID:-100}
 groupmod -o -g "$PGID" xyz
 usermod -o -u "$PUID" xyz
 chown -R xyz:xyz /opt
+chmod -R +x /opt
 echo "
 -----------------------------------------
               DashBtn
