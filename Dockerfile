@@ -8,11 +8,10 @@ VOLUME /config
 COPY root/ /
 
 # Install permanent packages
-RUN apk add --no-cache python curl tzdata && \
+RUN apk add --no-cache python curl tzdata shadow && \
 
 # Install temporary build dependencies
 apk add --no-cache --virtual build-dependencies \
-shadow \
 py-pip \
 tar && \
 
