@@ -4,7 +4,7 @@ MAINTAINER ninthwalker
 ENV UPDATED_ON 21MAR2017
 VOLUME /config
 
-#copy app and s6-overlay files
+#copy app files
 COPY root/ /
 
 # Install permanent packages
