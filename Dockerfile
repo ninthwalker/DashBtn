@@ -21,7 +21,7 @@ curl -L -s https://github.com/just-containers/s6-overlay/releases/download/v1.19
 | tar xvzf - -C / && \
 
 # install app dependencies
-pip install plexapi
+pip install plexapi && \
 
 # Create default user
 groupmod -g 1000 users && \
