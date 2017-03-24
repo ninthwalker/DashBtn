@@ -13,11 +13,8 @@ ie: Turn on a light, start a movie for your kid, notifications, order a pizza, e
 
 2. Determine your Amazon Dash buttons mac address.
     2. docker exec -it dashbtn sh
-  
     2. /config/dashbtn.py discover 
-  
     2. press dash button and wait 10seconds. Then type 'ctrl+c' to stop script. 
-  
     2. look at the dashbtn.log file in the appdata folder to help determine your mac address 
 
 3. In the appdata directory edit the dashbtn.py file with your mac addresses and give them a friendly name.
