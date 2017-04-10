@@ -24,7 +24,7 @@ ie: Turn on a light, start a movie for your kid, notifications, order a pizza, e
 
 **4. Create whatever home automation scripts you want. This part is up to you to design and implement**
 
-      a. You can utilize shell, python and curl
+      a. You can utilize shell, python, curl, and the plexapi
       b. Name the scripts the same as in step 3a
 
 **5. Restart the docker to have all changes/scripts take effect.**
