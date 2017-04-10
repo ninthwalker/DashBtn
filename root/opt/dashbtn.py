@@ -29,7 +29,11 @@ while True:
     ethernet_header = packet[0][0:14]
     ethernet_detailed = struct.unpack('!6s6s2s', ethernet_header)
     arp_header = packet[0][14:42]
-    arp_detailed = struct.unpack('2s2s1s1s2s6s4s6s4s', arp_header)
+    fmt = '2s2s1s1s2s6s4s6s4s'
+    if len(arp_header) != struct.calcsize(fmt):
+        logging.warning("length of arp_header is " + str(len(arp_header)) + " while the size of the struct is " + str(struct.calcsize(fmt)) )
+        continue
+    arp_detailed = struct.unpack(fmt, arp_header)
     # skip non-ARP packets
     ethertype = ethernet_detailed[2]
     if ethertype != '\x08\x06':
